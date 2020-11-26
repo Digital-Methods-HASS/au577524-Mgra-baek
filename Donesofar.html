@@ -1,0 +1,23 @@
+Question 1: Why does it make sense to have a log10 scale on x axis?
+
+The problem is that the two axis are very different in size by using the logarithmic scale
+on the x-axis it becomes more "even" and therefore easier to look at. 
+
+Question 2 and 4:  What country is the richest in 1952?  What are the five richest countries in the world in 2007?
+
+
+subset(gapminder,year==1952) %>%       [Note you replace 1952 with 2007 in question 4]
+group_by(country,gdpPercap) %>% 
+summarize(min_gdpPercap=min(gdpPercap), max_gdpPercap=max(gdpPercap)) %>%
+arrange(desc(max_gdpPercap)
+
+By linking gdp to countries it's possible to find out what country is the most wealthy in 1952 
+If I looked right it shoud be Kuwait. For 2007 it should be Norway followed by Kuwait, Singapore, The U.S and Ireland.
+
+Question 3: Can you differentiate the continents by color and fix the axis labels?
+
+Yes it can be done. You need to use the equal sign to put in between the two variables like color = continent
+
+
+
+
