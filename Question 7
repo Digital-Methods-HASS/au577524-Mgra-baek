@@ -1,0 +1,15 @@
+Question 7:  Come up with a question you want to answer using the gapminder data and write it down. Then, create a data visualisation that answers the question and explain how your visualization answers the question.
+
+So I totally  uncreatively want to find out how to find the life expenpancy in countries which could be used to see how
+it correlates with economic growth for example.
+
+I picked Germany - So how can we find out how the life expancy in Germany has evolved?
+
+DE<- gapminder %>% 
+
+filter(country=="Germany")
+
+ggplot(DE, aes (x = year, y = lifeExp, group = country) + geom_line() +
+  transition_reveal(year)
+  
+  This approach should be able to give us the desired results for the original question
