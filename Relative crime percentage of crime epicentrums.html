@@ -1,0 +1,47 @@
+> python
+
+> Import numpy as np
+
+
+# I start out with importing the required package for the operation then I define the number of cases happening in the specified districts
+# The first three numbers are for Westminster 013B for the period april to june same pattern forllows for Westminster 018A and Newham 012B
+# Lastly I define the cumulated number of cases for the whole period in that year. I divide the original number with 100 to shorten the script. 
+
+Cases1 = [250, 367, 327, 245, 269, 253, 70, 86, 71]
+Year2018 = [779.89]
+
+print ("1st input array :", Cases1)
+print ("2nd input array :", year2018)
+
+# Use the function to divide the two variables
+dive = np.divide(cases1, year2018)
+Print ("Division of two array :", div)
+
+# The percentage of each month relative for the whole three month period in 2018
+Division of two arrays : [0.32, 0.47, 0.42, 0.31, 0.35, 0.32, 0.09, 0.11, 0.09]
+
+# I repeat the script for the next two years
+
+Cases2 = [668, 534, 520, 821, 561, 467, 107, 87, 99]
+Year2019 = [884.57]
+
+print ("1st input array :", Cases2)
+print ("2nd input array :", year2019)
+
+dive = np.divide(cases2, year2019)
+Print ("Division of two array :", div)
+
+Division of two arrays :[0.76, 0.60, 0.59, 0.93, 0.63, 0.53, 0.12, 0.10, 0.11]
+
+Cases3 = [19, 23, 74, 19, 16, 26, 25, 52, 48]
+Year2020 = [418.28]
+
+print ("1st input array :", Cases3)
+print ("2nd input array :", year2020)
+
+dive = np.divide(cases3, year2020)
+Print ("Division of two array :", div)
+
+Division of two arrays : [0.05, 0.05, 0.18, 0.05, 0.04, 0.06, 0.06, 0.12, 0.11]
+
+Inspired by https://www.pythonpool.com/numpy-divide/ 
