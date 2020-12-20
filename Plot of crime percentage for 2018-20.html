@@ -1,0 +1,47 @@
+> Python
+
+> Import matplotlib.pyplot as plt
+
+# Starting out with downloading the required package
+# Defining the percentage of cases relative all crimes in london for the 9 month analyzed
+# Defining the 9 months 
+
+Cases1_013B = [0.32, 0.47, 0.42,0.76, 0.60, 0.59, 0.05, 0.05, 0.18]
+
+Cases2_018A = [0.31, 0.35, 0.32,0.93, 0.63, 0.53, 0.05, 0.04, 0.06]
+
+Cases3_012B = [0.09, 0.11, 0.09, 0.12, 0.10, 0.11, 0.06, 0.12, 0.11]
+
+
+Year1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Year2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Year2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+#Plotting the x and y variables into the plot.
+
+plt.plot(year1, Cases1_013B, label = "Westminster 013B")
+
+plt.plot(year2, Cases1_018A, label = "Westminster 018A")
+
+plt.plot(year3, Cases3_012B, label = "Newham 012B")
+
+plt.xlabel('x -axis')
+plt.ylabel('y - axis')
+
+plt.title('releative crime percentage in London 2018-20')
+
+Plt.legend()
+
+Plt.show()
+
+Inspired by https://www.w3resource.com/graphics/matplotlib/basic/matplotlib-basic-exercise-5.php
+
+
+
+
+
+
+
+
